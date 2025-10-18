@@ -1,0 +1,23 @@
+### Test if server is running
+GET http://localhost:5000/api/test
+
+### Generate Language Plan
+POST http://localhost:5000/api/generate-language-plan
+Content-Type: application/json
+
+{
+  "language": "Spanish",
+  "level": "beginner",
+  "duration": "7"
+}
+
+### Generate Quiz
+POST http://localhost:5000/api/generate-vocab-quiz
+Content-Type: application/json
+
+{
+  "language": "Spanish",
+  "topic": "food and drinks",
+  "num_questions": 5
+}
+    
